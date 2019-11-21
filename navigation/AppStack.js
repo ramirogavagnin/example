@@ -127,7 +127,7 @@ const AppStack = createDrawerNavigator(
         Help: HelpStack,
     },
     {
-        initialRouteName: 'ParentRecords',
+        initialRouteName: 'ParentHome',
         contentComponent: DrawerMenu,
         drawerPosition: 'right',
         drawerType: 'slide',
