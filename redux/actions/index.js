@@ -132,58 +132,26 @@ export const handleOnPressNotification = payload => {
 export const loginUser = ({ email, password }, navigation) => {
     return dispatch => {
         dispatch(setIsLoading(true))
-        axios
-            // .get('http://localhost:3000/login')
-            .get('https://jsonplaceholder.typicode.com/todos/1')
-
-            .then(({ data }) => {
-                dispatch(setSession(data))
-            })
-            .then(() => navigation.navigate(routes.app))
-            .catch(error => {
-                dispatch(
-                    setError(
-                        `There was an error: ${error.message}\nid: ${Math.floor(
-                            Math.random() * 100
-                        )}`
-                    )
-                )
-            })
+        setTimeout(() => {
+            dispatch(setSession({}))
+            navigation.navigate(routes.app)
+        }, 300)
     }
 }
-
-// POST LOGIN
-// export const loginUser = ({ email, password }, navigation) => {
-//     return dispatch => {
-//         console.warn('pepe')
-//         axios
-//             .post({
-//                 url: 'http://localhost:3000/login',
-//                 method: 'post',
-//                 auth: {
-//                     username: email,
-//                     password,
-//                 },
-//                 headers: {
-//                     'Content-Type': 'application/json',
-//                 },
-//             })
-//             .then(({ data }) => {
-//                 console.warn(data)
-//                 dispatch(setSession(data))
-//             })
-//             .then(() => {
-//                 console.warn('llegue a la navegación')
-//             })
-//             .catch(error => dispatch(setError(error)))
-//     }
-// }
 
 export const postMedicalRecord = (form, navigation) => {
     return dispatch => {
         dispatch(setIsLoading(true))
-        axios
-            // .get('http://localhost:3000/login')
+        setTimeout(() => {
+            dispatch(setNewMedicalRecord(form))
+            dispatch(
+                setSuccess(
+                    `Congrats! Your file "${form.file.name}" was succesfuly uploaded`
+                )
+            )
+        }, 300)
+        /*   axios
+
             .get('https://jsonplaceholder.typicode.com/todos/1')
 
             .then(({ data }) => {
@@ -204,6 +172,6 @@ export const postMedicalRecord = (form, navigation) => {
                         }\nid: ${Math.floor(Math.random() * 100)}`
                     )
                 )
-            })
+            }) */
     }
 }

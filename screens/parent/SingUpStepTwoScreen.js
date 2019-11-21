@@ -119,7 +119,6 @@ export default function SignUpStepTwoScreen(props) {
                         onPress={() =>
                             navigation.navigate(routes.signUpStepThree)
                         }
-                        // disabled={name && lastName ? false : true}
                     >
                         <LatoText style={buttonText}>Create Account</LatoText>
                     </Button>

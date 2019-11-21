@@ -81,7 +81,6 @@ export default function SignUpStepThreeScreen(props) {
                         onPress={() =>
                             navigation.navigate(routes.signUpStepFour)
                         }
-                        //disabled={name && lastName ? false : true}
                     >
                         <LatoText style={buttonText}>
                             Assessment Questions

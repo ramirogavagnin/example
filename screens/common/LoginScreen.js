@@ -92,7 +92,6 @@ function LoginScreen({ loginUser, session, isLoading, error, navigation }) {
                     <Button
                         style={[button, marginTop6]}
                         onPress={handleOnSubmit}
-                        disabled={email && password ? false : true}
                     >
                         <LatoText style={buttonText}>LOG IN</LatoText>
                     </Button>

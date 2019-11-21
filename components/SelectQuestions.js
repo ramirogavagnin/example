@@ -17,14 +17,15 @@ export default function SelectQuestions(props) {
     return (
         <Picker
             {...props}
-            // style={selectAndroid}
             mode="dropdown"
             itemStyle={[
                 {
-                    height: wp(11.2),
+                    height: wp(9.8),
                     width: '95%',
                     alignSelf: 'center',
                     textAlign: 'left',
+                    fontSize: wp(4.2),
+                    fontFamily: 'lato-bold',
                 },
             ]}
         >

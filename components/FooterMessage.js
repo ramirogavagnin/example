@@ -22,10 +22,12 @@ export default function FooterMessage(props) {
     const { mediumIcon } = Sizes
     const { style, message } = props
     const { gradient, input, iconContainer } = styles
+
     return (
         <KeyboardAvoidingView
             behavior="padding"
             keyboardVerticalOffset={wp(30)}
+            enabled
         >
             <LinearGradient
                 colors={[gradientStart, gradientMiddle, primaryColor]}

@@ -174,7 +174,12 @@ export default function ParentInfoScreen(props) {
                         color={Colors.primaryColor}
                     />
 
-                    <Button style={[button, marginTop12, { width: '100%' }]}>
+                    <Button
+                        style={[button, marginTop12, { width: '100%' }]}
+                        onPress={() =>
+                            navigation.navigate(routes.parentRecords)
+                        }
+                    >
                         <LatoText style={buttonText} fontWeight={'lato-bold'}>
                             ALL MEDICAL RECORDS
                         </LatoText>

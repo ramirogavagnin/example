@@ -408,7 +408,6 @@ export default function SignUpStepFourScreen(props) {
                     <Button
                         style={[button, marginTop14]}
                         onPress={() => navigation.navigate(routes.app)}
-                        //disabled={name && lastName ? false : true}
                     >
                         <LatoText style={buttonText}>
                             Go to Home Screen

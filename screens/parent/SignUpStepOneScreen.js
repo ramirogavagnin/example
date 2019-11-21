@@ -163,7 +163,6 @@ export default function SignUpStepOneScreen(props) {
                         onPress={() =>
                             navigation.navigate(routes.signUpStepTwo)
                         }
-                        //disabled={name && lastName && date ? false : true}
                     >
                         <LatoText style={buttonText}>I Agree</LatoText>
                     </Button>

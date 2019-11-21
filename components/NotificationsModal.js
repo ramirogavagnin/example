@@ -109,12 +109,6 @@ function NotificationsModal(props) {
                     <RecordsList
                         {...props}
                         data={medicalRecords}
-                        // onPress={() => {
-                        //     navigateToScreen(routes.parentRecordsDetail, {
-                        //         ...props,
-                        //     })
-                        //     onPress()
-                        // }}
                         onPress={() => handleOnPressNotification({ ...props })}
                         style={{ color: whiteText }}
                     />
