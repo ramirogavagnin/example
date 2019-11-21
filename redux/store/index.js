@@ -1,8 +1,5 @@
-import { AsyncStorage } from 'react-native'
 import { createStore, applyMiddleware } from 'redux'
-import { persistStore, persistReducer } from 'redux-persist'
 import reduxThunk from 'redux-thunk'
-import { composeWithDevTools } from 'remote-redux-devtools'
 import _ from 'lodash'
 
 import reducers from '../reducers'
@@ -297,15 +294,6 @@ const childrensData = [
     },
 ]
 
-/* const INITIAL_STATE = {
-    session: [],
-    medicalRecords: _.sortBy(inicialRecords, [item => item.date]),
-    currentRecord: [],
-    isLoading: false,
-    error: null,
-    success: null,
-} */
-
 const INITIAL_STATE = {
     session: {
         success: true,
@@ -329,28 +317,8 @@ const INITIAL_STATE = {
     success: null,
 }
 
-const persistConfig = {
-    key: 'root',
-    storage: AsyncStorage,
-}
-
-const persistedReducer = persistReducer(persistConfig, reducers)
-
-// Remote devTools config
-// const composeEnhancers = composeWithDevTools({
-//     realtime: true,
-//     port: 19001,
-//     suppressConnectErrors: false,
-// })
-
-// Persist Config
-// const store = createStore(
-//     persistedReducer,
-//     INITIAL_STATE,
-//     applyMiddleware(reduxThunk)
-// )
-
-const store = createStore(reducers, INITIAL_STATE, applyMiddleware(reduxThunk))
-const persistor = persistStore(store)
-
-export { store, persistor }
+export const store = createStore(
+    reducers,
+    INITIAL_STATE,
+    applyMiddleware(reduxThunk)
+)

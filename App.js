@@ -4,9 +4,8 @@ import { Asset } from 'expo-asset'
 import * as Font from 'expo-font'
 
 import { Provider } from 'react-redux'
-import { PersistGate } from 'redux-persist/integration/react'
 
-import { store, persistor } from './redux/store'
+import { store } from './redux/store'
 
 import AppNavigator from './navigation/AppNavigator'
 
@@ -24,9 +23,7 @@ export default function App(props) {
     } else {
         return (
             <Provider store={store}>
-                {/*    <PersistGate loading={null} persistor={persistor}> */}
                 <AppNavigator />
-                {/*  </PersistGate> */}
             </Provider>
         )
     }
@@ -48,11 +45,7 @@ async function loadResourcesAsync() {
     ])
 }
 
-function handleLoadingError(error) {
-    // In this case, you might want to report the error to your error reporting
-    // service, for example Sentry
-    console.warn(error)
-}
+function handleLoadingError(error) {}
 
 function handleFinishLoading(setLoadingComplete) {
     setLoadingComplete(true)
