@@ -18,7 +18,11 @@
         },
         "assetBundlePatterns": ["**/*"],
         "ios": {
-            "supportsTablet": true
+            "supportsTablet": true,
+            "bundleIdentifier": "com.esutest.esu"
+        },
+        "android": {
+            "package": "com.esutest.esu"
         }
     }
 }
