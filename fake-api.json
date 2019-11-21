@@ -1,0 +1,28 @@
+{
+    "login": [
+        {
+            "id": 1,
+            "success": true,
+            "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkYzE4OTIzZTRiZTkzMTU4MGRlNjk4NSIsImVtYWlsIjoiYWx2YXJvMkBob3RtYWlsLmNvbSIsImlhdCI6MTU3Mjk2NDk5OSwiZXhwIjoxNjA0NTIxOTI1fQ.LuJGUMF3d4UDegb0e1OcqB2GzEZUSsxa_B42ifXre-k",
+            "user": {
+                "_id": "5dc18923e4be931580de6985",
+                "email": "alvaro2@hotmail.com"
+            }
+        }
+    ],
+    "medical-record": [
+        {
+            "_id": "5dc18923e4be931580de6985",
+            "userId": "5dc18923e4213dse930de6986",
+            "date": "2019-05-07T15:51:39.076+00:00",
+            "files": [
+                {
+                    "category": "MedicalTest",
+                    "url": "https://{{server}}/file.pdf",
+                    "name": "NewFile.pdf",
+                    "favorite": false /* por default */
+                }
+            ]
+        }
+    ]
+}

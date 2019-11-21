@@ -1,0 +1,253 @@
+[
+    {
+        "new-medical-record": {
+            "_id": "5dc18923e4be931580de6985",
+            "userId": "5dc18923e4213dse930de6986",
+            "date": "2019-05-07T15:51:39.076+00:00",
+            "file": {
+                "category": "MedicalTest",
+                "url": "https://{{server}}/file.pdf",
+                "name": "NewFile.pdf",
+                "favorite": false
+            }
+        }
+    },
+    {
+        "medicalRecords": [
+            {
+                "_id": "5dc18923e4be931580de6921",
+                "ownerId": "5dc18923e4213dse930de6981",
+                "date": "2019-05-10T18:51:39.076+00:00",
+                "category": [
+                    {
+                        "id": "1",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest"
+                    },
+                    {
+                        "id": "2",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest 2"
+                    },
+                    {
+                        "id": "3",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest 3"
+                    }
+                ],
+                "favorite": false,
+                "file": {
+                    "url": "https://{{server}}/file.pdf",
+                    "name": "NewFile.pdf"
+                }
+            },
+            {
+                "_id": "5dc18923e4be931580de6985",
+                "ownerId": "5dc18923e4213dse930de6982",
+                "date": "2019-01-03T15:51:39.076+00:00",
+                "category": [
+                    {
+                        "id": "1",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest"
+                    }
+                ],
+                "favorite": false,
+                "file": {
+                    "url": "https://{{server}}/file.pdf",
+                    "name": "NewFile.pdf"
+                }
+            },
+            {
+                "_id": "5dc18923e4be931580de6922",
+                "ownerId": "5dc18923e4213dse930de6983",
+                "date": "2019-05-07T15:51:39.076+00:00",
+                "category": [
+                    {
+                        "id": "1",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest"
+                    },
+                    {
+                        "id": "2",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest 2"
+                    }
+                ],
+                "favorite": false,
+                "file": {
+                    "url": "https://{{server}}/file.pdf",
+                    "name": "NewFile.pdf"
+                }
+            },
+            {
+                "_id": "5dc18923e4be931580de6933",
+                "ownerId": "5dc18923e4213dse930de6984",
+                "date": "2019-05-10T16:51:39.076+00:00",
+                "category": [
+                    {
+                        "id": "1",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest"
+                    },
+                    {
+                        "id": "2",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest 2"
+                    },
+                    {
+                        "id": "3",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest 3"
+                    }
+                ],
+                "favorite": false,
+                "file": {
+                    "url": "https://{{server}}/file.pdf",
+                    "name": "NewFile.pdf"
+                }
+            },
+
+            {
+                "_id": "5dc18923e4be931580de6911",
+                "ownerId": "5dc18923e4213dse930de6921",
+                "date": "2019-11-03T15:51:39.076+00:00",
+                "category": [
+                    {
+                        "id": "1",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest"
+                    }
+                ],
+                "favorite": false,
+                "file": {
+                    "url": "https://{{server}}/file.pdf",
+                    "name": "NewFile.pdf"
+                }
+            },
+            {
+                "_id": "5dc18923e4be931580de6912",
+                "ownerId": "5dc18923e4213dse930de6925",
+                "date": "2019-11-03T15:51:39.076+00:00",
+                "category": [
+                    {
+                        "id": "1",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest"
+                    },
+                    {
+                        "id": "2",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest 2"
+                    },
+                    {
+                        "id": "3",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest 3"
+                    }
+                ],
+                "favorite": false,
+                "file": {
+                    "url": "https://{{server}}/file.pdf",
+                    "name": "NewFile.pdf"
+                }
+            },
+            {
+                "_id": "5dc18923e4be931580de6913",
+                "ownerId": "5dc18923e4213dse930de6965",
+                "date": "2019-11-03T15:51:39.076+00:00",
+                "category": [
+                    {
+                        "id": "1",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest"
+                    },
+                    {
+                        "id": "2",
+                        "userId": "5dc18923e4213dse930de6986",
+                        "title": "MedicalTest 2"
+                    }
+                ],
+                "favorite": false,
+                "file": {
+                    "url": "https://{{server}}/file.pdf",
+                    "name": "NewFile.pdf"
+                }
+            }
+        ]
+    },
+    {
+        "newPoll": {
+            "assessmentQuestions": {
+                "question_1": {
+                    "question": "1) How would you best describe your race and ethnic group?",
+                  "options": 
+                },
+                "question_2": {
+                    "question": "2) Your physical activity"
+                },
+                "question_3": {
+                    "question": "3) Your tobacco usage"
+                },
+                "question_4": {
+                    "question": "4) Your drinking habits"
+                },
+                "question_5": {
+                    "question": "5) Do you drink alcohol?"
+                }
+            },
+            "eatingHabits": {
+                "question_6": {
+                    "question": "6) When choosing food, do you tend to eat high-fat or low-fat items?"
+                },
+                "question_7": {
+                    "question": "7) When choosing food, do you tend to eat high-fiber or low-fiber items?",
+                },
+                "question_8": {
+                    "question": "8) When choosing food, do you tend to eat high-salt or low-salt items"
+                },
+                "question_9": {
+                    "question": "9) How often do you eat sweet, sugar foods in a typical day?"
+                },
+                "question_10": {
+                    "question": "10) How many serving of fruits and vegetables a day?"
+                }
+            },
+            "others": {
+                "question_11": {
+                    "question": "11) Which of the following medical conditions have you been diagnosed with?"
+                },
+                "question_12": {
+                    "question": "12) Which of the following preventive and screening services have you had?"
+                },
+                "question_13": {
+                    "question": "13) Your stress; looking back 3 months how often felt axious or nervous for no good reason?"
+                },
+                "question_14": {
+                    "question": "14) Your stress; looking back 3 months how often have you felt sad, miserable or depressed?"
+                },
+                "question_15": {
+                    "question": "15) Pain — Do you have any body pains? If so, where?"
+                },
+                "question_16": {
+                    "question": "16) Your sleep? How many hours daily?"
+                },
+                "question_17": {
+                    "question": "17) How often do you have difficulty falling asleep or staying asleep?"
+                },
+                "question_18": {
+                    "question": "18) When driving in a car, do you wear a seat belt?",
+                    "answer": "qwe"
+                },
+                "question_19": {
+                    "question": "19) How do you rate your overall health? Scale Poor to Excellent",
+                },
+                "question_20": {
+                    "question": "20) How would you rate your happiness & satisfaction with your life? Scale Terrible to Excellent"
+                }
+            },
+            "_id": "5dcd559f7737c93acc6ffcbb",
+            "__v": 0
+        }
+    }
+]
