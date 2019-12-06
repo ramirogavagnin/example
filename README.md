@@ -1,7 +1,7 @@
 # example
 Example repository | React Native App
 
-Get Started
+# Get Started
 
 #1 You will need the Expo CLI => $ npm install -g expo-cli
 
